@@ -113,7 +113,8 @@ header {
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.15);
     min-height: 50px;
     cursor: pointer;
@@ -273,6 +274,7 @@ main img {
     margin: 4px 0px;
     padding: 0px 13px;
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .configContainer {
@@ -282,6 +284,7 @@ main img {
     margin: 0px 0px 4px;
     padding: 0px 13px;
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -605,10 +608,11 @@ main img {
 
     header {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: 35% 35% 13% 13%;
+        /* grid-template-rows: auto; */
+        grid-column-gap: 4px;
+        /* grid-row-gap: 10px; */
     }
 
     .w124,
@@ -621,5 +625,15 @@ main img {
     }
     footer {
         width: 90%;
+    }
+    .inline-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .balanceInfo span {
+        width: 50%;
+    }
+    .balanceInfo {
+        align-items: start;
     }
 }

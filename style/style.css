@@ -14,6 +14,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     background-color: #FFFFFF;
+    position: relative;
 }
 
 .wrapper {
@@ -22,9 +23,12 @@ body {
     align-items: top;
     justify-content: center;
     margin: 0 auto;
-    min-height: 200px;
     background-color: #121214;
-    height: 100vh;
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .inline-wrapper {
@@ -39,6 +43,7 @@ body {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    align-self: stretch
 }
 
 .main-container {
@@ -348,11 +353,13 @@ main img {
     align-items: center;
     width: 100%;
 }
+
 .profileContainer .configContainerFlex100 {
     min-height: 50px;
     padding-left: 16px;
     padding-right: 16px;
 }
+
 .gridConfigContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -432,6 +439,7 @@ main img {
 .tc {
     text-align: center;
 }
+
 .tr {
     text-align: right;
 }
@@ -459,11 +467,13 @@ main img {
     display: inline-block;
     width: 30px;
 }
+
 .configBalanceContainer {
     display: flex;
     align-items: center;
     width: 50%;
 }
+
 .comSoonBlur {
     opacity: 0.5;
     margin-top: 16px;
@@ -562,6 +572,7 @@ main img {
     justify-content: space-between;
     padding: 16px;
 }
+
 .friendsAddressContainer {
     display: flex;
     align-items: center;
@@ -576,9 +587,11 @@ main img {
     padding: 16px;
     margin-top: 16px;
 }
+
 .friendsAddressContainer input {
     width: 80%;
 }
+
 .walletLink {
     background: none;
     border: none;
@@ -621,6 +634,7 @@ main img {
     justify-content: center;
     width: 20%;
 }
+
 .dateStatus {
     display: flex;
     align-items: center;
@@ -628,6 +642,7 @@ main img {
     flex-direction: column;
     width: 40%;
 }
+
 .earnedStatusContainer {
     display: flex;
     align-items: center;
@@ -635,6 +650,7 @@ main img {
     flex-direction: column;
     width: 35%;
 }
+
 .tokenPercentContainer {
     display: flex;
     align-items: center;
@@ -642,6 +658,7 @@ main img {
     flex-direction: column;
     width: 30%;
 }
+
 .depositStatusContainer {
     display: flex;
     align-items: center;
@@ -657,9 +674,11 @@ main img {
     flex-direction: row;
     width: 30%;
 }
+
 .profileContainer .configBalanceContainer {
     width: 70%;
 }
+
 .tokenChosenContainer .walletAddressConfigContainer {
     display: flex;
     align-items: center;
@@ -807,10 +826,12 @@ main img {
     width: 100%;
     justify-content: space-between;
 }
+
 .telegramContainer .configBalanceContainer {
     width: 100%;
     justify-content: start;
 }
+
 .configGridContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -869,6 +890,7 @@ main img {
     -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.15);
 }
+
 .profileUserContainer {
     display: flex;
     flex-direction: column;
@@ -876,6 +898,7 @@ main img {
     align-items: center;
     justify-content: center;
 }
+
 .profileStatusIcon {
     background-color: #121212;
     width: 26px;
@@ -892,20 +915,25 @@ main img {
     position: relative;
     bottom: 17px;
 }
+
 .pr14 {
     position: relative;
     bottom: 14px;
 }
+
 .profileStatusIcon img {
     display: inline-block;
     width: 16px;
 }
+
 .startAppBtn {
     cursor: pointer;
 }
+
 .openPoolBtn {
     margin-top: 16px;
 }
+
 .BBText {
     font-weight: 700;
     font-size: 16px;
@@ -915,10 +943,12 @@ main img {
     padding: 10px 0px 16px;
     width: 100%;
 }
+
 .bullImg {
     display: inline-block;
     width: 50px;
 }
+
 @media screen and (max-width: 400px) {
     header {
         display: grid;
@@ -946,24 +976,30 @@ main img {
     .balanceInfo {
         align-items: start;
     }
+
     .w124 {
         padding: 6px 6px;
     }
+
     .spanw0 {
         width: auto !important;
     }
+
     .spanw63 {
         width: 63% !important;
     }
 }
+
 @media screen and (max-width: 355px) {
     .spanw0 {
         width: auto !important;
-        
+
     }
+
     .spanw63 {
         width: auto !important;
     }
+
     .balanceInfo span {
         font-size: 12px;
     }

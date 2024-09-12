@@ -949,4 +949,22 @@ main img {
     .w124 {
         padding: 6px 6px;
     }
+    .spanw0 {
+        width: auto !important;
+    }
+    .spanw63 {
+        width: 63% !important;
+    }
+}
+@media screen and (max-width: 355px) {
+    .spanw0 {
+        width: auto !important;
+        
+    }
+    .spanw63 {
+        width: auto !important;
+    }
+    .balanceInfo span {
+        font-size: 12px;
+    }
 }
